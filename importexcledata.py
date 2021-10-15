@@ -1,5 +1,5 @@
-import xlrd
 import pymysql
+import xlrd
 
 if __name__ == '__main__':
     data = xlrd.open_workbook('E:\\data\\all_second_car.xls')

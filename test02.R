@@ -8,5 +8,5 @@ exp(1)
 log10(10000)
 curve(x^2, -2, 2)
 
-curve(sin(x), 0, 2*pi)
-abline(h=0)
+curve(sin(x), 0, 2 * pi)
+abline(h = 0)
