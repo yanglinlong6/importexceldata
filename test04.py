@@ -39,4 +39,9 @@ def dir_size01(d):
 
 if __name__ == '__main__':
     # dir_size('D:\JAVAAPP\PowerDesigner 15\\bpm.chm')
-    dir_size01('D:\JAVAAPP\PowerDesigner 15')
+    # dir_size01('D:\JAVAAPP\PowerDesigner 15')
+    # for num in range(75):
+    if 119 != 0 and 119 % 75 == 0:
+        print('====', 2)
+
+    print('====1')
