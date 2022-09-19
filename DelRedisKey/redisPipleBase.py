@@ -1,6 +1,7 @@
 import redis
 
-r = redis.StrictRedis(host="192.168.3.207", port=6379, db=0)
+# r = redis.StrictRedis(host="192.168.3.207", port=6379, db=0)
+r = redis.StrictRedis(host="112.74.125.238", port=6379, db=0)
 pipe = r.pipeline()
 
 if __name__ == '__main__':

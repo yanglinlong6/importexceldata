@@ -1,6 +1,7 @@
 import redis
 
-r = redis.StrictRedis(host="192.168.3.207", port=6379, db=0)
+# r = redis.StrictRedis(host="192.168.3.207", port=6379, db=0)
+r = redis.StrictRedis(host="112.74.125.238", port=6379, db=0)
 pipe = r.pipeline()
 # snList = []
 
@@ -14,6 +15,7 @@ if __name__ == '__main__':
     # pipe.execute()
     print("0")
     r.set('foo', 'bar')
+    r.set('foo1', 'baryang')
     result = r.get('foo').decode('UTF-8')
     result02 = pipe.get('foo')
     pipe.execute()
