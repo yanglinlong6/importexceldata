@@ -2,12 +2,14 @@ from subprocess import call
 
 from pip._internal.utils.misc import get_installed_distributions
 
+# python -m site 查看包安装地址
 # 更新所有的jar包
 if __name__ == '__main__':
     # call('python -m pip install --upgrade pip', shell=True)
     # 升级所有依赖包含如下两个命令
     for dist in get_installed_distributions():
         if dist.project_name != 'pip':
+            # --user
             call('pip install --upgrade ' + dist.project_name + ' --user --use-feature=2020-resolver', shell=True)
 
     # pip install pip-review --user  # 先安装pip-review函数
